@@ -9,7 +9,7 @@ for i in range(65, 91):
 
 total_letters = 0
 for ch in ciphertext:
-      if ch.isalpha():
+    if ch.isalpha():
         frequency[ch] += 1
         total_letters += 1
 
@@ -28,7 +28,7 @@ for letter in frequency:
 
 sorted_letters = sorted(frequency.items(), key=lambda item: item[1], reverse=True)
 print("\ntop 5 most frequent letters")
-for i in range(5):
+for i in range(min(5, len(sorted_letters))):
     letter = sorted_letters[i][0]
     count = sorted_letters[i][1]
 
