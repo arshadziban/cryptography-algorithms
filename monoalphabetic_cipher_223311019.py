@@ -1,9 +1,7 @@
 alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 substitution_key = "QWERTYUIOPASDFGHJKLZXCVBNM"
-
 encrypt_table = {}
 decrypt_table = {}
-
 for i in range(26):
     encrypt_table[alphabet[i]] = substitution_key[i]
     decrypt_table[substitution_key[i]] = alphabet[i]

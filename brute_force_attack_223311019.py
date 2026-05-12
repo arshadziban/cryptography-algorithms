@@ -1,7 +1,7 @@
 alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 # Enter the ciphertext
-message = input("Enter the ciphertext (as uppercase): ")
+message = input("Enter the ciphertext (as uppercase): ").upper()
 
 print("\nPossible decryptions:\n")
 
